@@ -1,0 +1,317 @@
+body{
+    width:100%;
+    height:100%;
+    background-color:bisque;
+}
+
+.header{
+    width: 400px;
+    height: 100px;
+    position: relative;
+    left: 50%;
+    top:20px;
+    
+}
+
+#h1{
+    animation-name: exmaple;
+    animation-duration: 20s;
+}
+
+@keyframes example {
+    
+    0%{
+    transform:scaleX(0);
+    transition:transform 2s;
+    }
+    
+    
+    100%{
+    transform:scaleX(1.5);
+    transition:transform 2s;
+    }
+}
+
+
+
+.gridBox{
+    display: grid;
+    grid-template-columns: 4;
+    grid-template-rows: 2;
+    grid-gap:50px;
+    /* background-color:pink; */
+    padding-left: 35px;
+    padding-right: 35px;
+    position: relative;
+    top:-25px;
+}
+
+.Box{
+    background-color: cadetblue;
+    width:250px;
+    height:315px;
+    
+
+}
+
+.Box:active{
+    background-color:navy;
+
+
+    
+
+}
+
+.html{
+    display: grid;
+    grid-column:1/2 ;
+    grid-row: 1/2;
+     
+
+
+}
+
+.css{
+    display: grid;
+    grid-column:2/3 ;
+    grid-row:1/2 ;
+     
+    
+}
+
+.react{
+    display: grid;
+    grid-column:3/4 ;
+    grid-row:1/2 ;
+    
+}
+
+.node{
+    display: grid;
+    grid-column:4/5 ;
+    grid-row:1/2 ;
+    
+}
+
+.html2{
+    display: grid;
+    grid-column:1/2 ;
+    grid-row:2/3 ;
+    
+}
+
+.css2{
+    display: grid;
+    grid-column:2/3 ;
+    grid-row:2/3 ;
+    
+}
+
+.react2{
+    display: grid;
+    grid-column:3/4 ;
+    grid-row:2/3 ;
+    
+}
+
+.node2{
+    display: grid;
+    grid-column:4/5 ;
+    grid-row:2/3 ;
+    
+}
+
+#button{
+    width: 100px;
+    height: 30px;
+    background-color: blue;
+    border-radius: 9px;
+    position: relative;
+    left: 72px;
+    bottom: 12px;
+}
+
+.Box:hover #button{
+    background-color: white;
+    color:blue;
+
+}
+
+img{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    left: 85px;
+    top: 15px;
+}
+
+p{
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    top: -10px;
+    font-size: 12px;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    font-size: 20px;
+}
+
+@media (min-width:320px) and (max-width:465px){
+
+
+    #h1{
+    
+        position: relative;
+        left: -45px;
+        font-size: 22px;
+    }
+
+    .header{
+        width: 400px;
+        height: 100px;
+        position: relative;
+        left: 80%;
+        top:12px;
+         
+    
+    }
+
+    
+    .gridBox{
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 9;
+        grid-gap: 50px;
+        background-color: none;
+        position: relative;
+        top: -25px;
+    }
+    
+    .Box{
+        background-color: cadetblue;
+        width: 556px;
+        height: 600px;
+        position: relative;
+        left: -32px;
+        
+    
+    }
+
+    img{
+        width: 150px;
+        height: 150px;
+        position: relative;
+        left: 197px;
+        top: 35px;
+    }
+
+    h1{
+        color: white;
+        text-align: center;
+        position: relative;
+        top: 10px;
+        left: -3px;
+        font-size: 35px;
+    }
+
+    p{
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        top: -36px;
+        font-size: 26px;
+    }
+
+    #button{
+        width: 220px;
+        height: 60px;
+        background-color: blue;
+        border-radius: 20px;
+        position: relative;
+        left: 165px;
+        bottom: 15px;
+        font-size: 20px;
+        color:white;
+    }
+
+    .Box:hover #button {
+        background-color:red;
+        color:blue;
+    } 
+    
+    .Box:hover{
+        background-color:darkblue;
+    
+    }
+
+    .Box:hover p{
+        color:darkgreen;
+    }
+    
+    .html{
+        display: grid;
+        grid-column:1/2 ;
+        grid-row: 1/2;
+         
+    
+    
+    }
+    
+    .css{
+        display: grid;
+        grid-column:1/2;
+        grid-row:2/3 ;
+         
+        
+    }
+    
+    .react{
+        display: grid;
+        grid-column:1/2 ;
+        grid-row:3/4 ;
+        
+    }
+    
+    .node{
+        display: grid;
+        grid-column:1/2 ;
+        grid-row:4/5 ;
+        
+    }
+    
+    .html2{
+        display: grid;
+        grid-column:1/2 ;
+        grid-row:5/6 ;
+        
+    }
+    
+    .css2{
+        display: grid;
+        grid-column:1/2 ;
+        grid-row:6/7 ;
+        
+    }
+    
+    .react2{
+        display: grid;
+        grid-column:1/2 ;
+        grid-row:7/8 ;
+        
+    }
+    
+    .node2{
+        display: grid;
+        grid-column:1/2 ;
+        grid-row:8/9 ;
+        
+    }
+    
+    
+
+}
